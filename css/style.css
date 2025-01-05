@@ -70,6 +70,9 @@ a {
 }
 
 /*****************Header************************/
+header {
+  margin-bottom: 60px;
+}
 header img {
   height: 20px;
 }
