@@ -3,6 +3,8 @@
   font-family: "Raleway", sans-serif;
   list-style-type: none;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -71,7 +73,7 @@ a {
 
 /*****************Header************************/
 header {
-  margin-bottom: 60px;
+  margin: 30px 0;
 }
 header img {
   height: 20px;
@@ -195,5 +197,32 @@ header nav a:hover {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  /* header */
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header img {
+    margin: 30px 0;
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    width: 100%;
+  }
+
+  header nav a:hover {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    border-top: none;
+  }
+  header nav a {
+    padding-bottom: 10px;
+  }
+  /* Fin header */
 }
