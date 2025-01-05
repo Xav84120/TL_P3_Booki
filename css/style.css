@@ -95,6 +95,15 @@ header nav a:hover {
   color: var(--main-color);
   border-top: 2px solid var(--main-color);
 }
+
+/****************info-group *******************/
+.headline {
+  margin-bottom: 20px;
+}
+.headline h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
