@@ -97,6 +97,11 @@ header nav a:hover {
 }
 
 /****************info-group *******************/
+.info-group {
+  height: 390px;
+  border: 2px solid black;
+}
+
 .headline {
   margin-bottom: 20px;
 }
