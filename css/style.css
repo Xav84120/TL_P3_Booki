@@ -71,6 +71,12 @@ a {
   align-items: center;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*****************Header************************/
 header {
   margin: 30px 0;
@@ -95,8 +101,9 @@ header nav a:hover {
   color: var(--main-color);
   border-top: 2px solid var(--main-color);
 }
+/*****************FIN Header************************/
 
-/****************info-group *******************/
+/****************info-group ***********************/
 .info-group {
   height: 390px;
   border: 2px solid black;
@@ -122,7 +129,7 @@ header nav a:hover {
   align-items: center;
   height: 50px;
   width: 50px;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 15px 0 0 15px;
   background: var(--main-bg-color);
 }
@@ -149,7 +156,13 @@ header nav a:hover {
   border: none;
   border-radius: 0 15px 15px 0;
 }
-/****** Hebergements And Populaires ***********/
+
+#glass {
+  display: none;
+}
+/****************Fin info-group *******************/
+
+/********* Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
@@ -162,12 +175,13 @@ header nav a:hover {
   box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/********** Hebergements ***********/
 .hebergements {
   width: 65%;
 }
+/****** FIN Hebergements ***********/
 
-/****** Populaires ***********/
+/*********** Populaires ***********/
 .populaires {
   width: 32%;
 }
@@ -211,6 +225,9 @@ header nav a:hover {
 .populaires-cards .card-rating {
   margin-bottom: 5px;
 }
+/****** FIN Populaires ************/
+
+/********** FIN Hebergements And Populaires ***********/
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -251,7 +268,7 @@ header nav a:hover {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* header */
+  /* HEADER */
   header {
     display: flex;
     flex-direction: column;
@@ -278,5 +295,22 @@ header nav a:hover {
   header nav a {
     padding-bottom: 10px;
   }
-  /* Fin header */
+  /* FIN HEADER */
+
+  /* SECTION INFO-GROUP */
+  /* search-bar */
+  .search-bar form button {
+    display: none;
+  }
+
+  .search-bar form input {
+    width: 235px;
+  }
+
+  #glass {
+    display: flex;
+    color: white;
+    background: var(--main-color);
+    border-radius: 15px;
+  }
 }
