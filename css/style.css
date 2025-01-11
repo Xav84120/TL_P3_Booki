@@ -448,4 +448,12 @@ header nav li:hover {
   .populaires {
     margin-bottom: 30px;
   }
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }
 }
