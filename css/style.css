@@ -331,6 +331,38 @@ header nav li:hover {
 
 /********** FIN Hebergements And Populaires ***********/
 
+/* DEBUT Activites */
+.activites {
+  border: 2px red solid;
+}
+.activites h2 {
+  margin-bottom: 30px;
+}
+
+.activites-grp-cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.activites-grp-cards a {
+  width: 100%;
+  max-width: 165px;
+}
+
+.activites-card {
+  border: 1px green solid;
+  height: 250px;
+}
+
+.activites-card img {
+  height: 215px;
+  width: 100%;
+}
+
+/* FIN Activites */
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
