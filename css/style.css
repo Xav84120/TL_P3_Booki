@@ -24,6 +24,7 @@ body {
   padding: 0;
   max-width: 1440px;
   min-width: 320px;
+  margin-bottom: 30px;
 }
 
 .main-container {
@@ -272,6 +273,10 @@ header nav li:hover {
   width: 100%;
 }
 
+.hebergements .card {
+  height: 205px;
+}
+
 /****** FIN Hebergements ***********/
 
 /*********** Populaires ***********/
@@ -419,5 +424,24 @@ header nav li:hover {
 
   .filters-grp {
     width: 45%;
+  }
+
+  .hebergements-and-populaires {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /* SECTION HEBERGEMENT */
+  .hebergements-cards-grp1,
+  .hebergements-cards-grp2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* SECTION POPULAIRE */
+  .populaires {
+    margin-bottom: 30px;
   }
 }
