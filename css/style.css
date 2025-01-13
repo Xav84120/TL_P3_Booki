@@ -40,7 +40,7 @@ a {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .section-title {
@@ -235,6 +235,7 @@ header nav li:hover {
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 
 .hebergements-and-populaires section {
@@ -331,9 +332,10 @@ header nav li:hover {
 
 /********** FIN Hebergements And Populaires ***********/
 
-/* DEBUT Activites */
+/****** DEBUT Activites ************/
 .activites {
   border: 2px red solid;
+  padding: 30px;
 }
 .activites h2 {
   margin-bottom: 30px;
@@ -348,22 +350,30 @@ header nav li:hover {
 
 .activites-grp-cards a {
   width: 100%;
-  max-width: 165px;
+  max-width: 300px;
 }
 
 .activites-card {
   border: 1px green solid;
-  height: 250px;
+  border-radius: 15px;
+  height: 440px;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
 .activites-card img {
-  height: 215px;
+  height: 380px;
   width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
 
-/* FIN Activites */
+.activites-card-text {
+  padding-left: 10px;
+}
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/******** FIN Activites ************/
+
+/********************************************* RESPONSIVE *************************************************/
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
