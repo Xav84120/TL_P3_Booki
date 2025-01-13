@@ -334,7 +334,6 @@ header nav li:hover {
 
 /****** DEBUT Activites ************/
 .activites {
-  border: 2px red solid;
   padding: 30px;
 }
 .activites h2 {
@@ -354,8 +353,7 @@ header nav li:hover {
 }
 
 .activites-card {
-  border: 1px green solid;
-  border-radius: 15px;
+  border-radius: 20px;
   height: 440px;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
 }
@@ -363,7 +361,7 @@ header nav li:hover {
 .activites-card img {
   height: 380px;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 20px;
   margin-bottom: 20px;
 }
 
@@ -375,7 +373,7 @@ header nav li:hover {
 
 /********************************************* RESPONSIVE *************************************************/
 
-/****** Media queries ***********/
+/********************* DEBUT RESPONSIVE TABLETTE *******************/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   /****** SECTION INFO-GROUP *******/
@@ -388,6 +386,8 @@ header nav li:hover {
   }
 
   /****** FIN SECTION INFO-GROUP *******/
+  /****** DEBUT HEBERGEMENTS ET POPULAIRES *******/
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -418,11 +418,35 @@ header nav li:hover {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
-}
+  /******* FIN HEBERGEMENTS ET POPULAIRES ********/
 
+  /******* DEBUT ACTIVITES ********/
+  .activites-grp-cards a {
+    width: 100%;
+    max-width: 190px;
+  }
+
+  .activites-card {
+    border-radius: 20px;
+    height: 275px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .activites-card img {
+    height: 205px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  /******* FIN ACTIVITES ********/
+}
+/********************* FIN RESPONSIVE TABLETTE *******************/
+
+/********************* DEBUT RESPONSIVE MOBILE *******************/
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* HEADER */
+  /********* DEBUT HEADER *******/
   header {
     display: flex;
     flex-direction: column;
@@ -449,9 +473,9 @@ header nav li:hover {
   header nav a {
     padding-bottom: 10px;
   }
-  /* FIN HEADER */
+  /********** FIN HEADER *******/
 
-  /* SECTION INFO-GROUP */
+  /****** DEBUT INFO-GROUP ****/
   /* search-bar */
   .search-bar form button {
     display: none;
@@ -476,7 +500,8 @@ header nav li:hover {
     display: flex;
     flex-direction: column-reverse;
   }
-  /* SECTION HEBERGEMENT */
+  /******* FIN INFO-GROUP *****/
+  /***** DEBUT HEBERGEMENT ****/
   .hebergements-cards-grp1,
   .hebergements-cards-grp2 {
     display: flex;
@@ -485,8 +510,9 @@ header nav li:hover {
     align-items: center;
     gap: 30px;
   }
+  /****** FIN HEBERGEMENT *****/
 
-  /* SECTION POPULAIRE */
+  /****** DEBUT POPULAIRE ****/
   .populaires {
     margin-bottom: 30px;
   }
@@ -498,4 +524,33 @@ header nav li:hover {
   .populaires-cards a {
     width: 100%;
   }
+  /******* FIN POPULAIRE *****/
+  /******* DEBUT ACTIVITES ********/
+  .activites-grp-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .activites-grp-cards a {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .activites-card {
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .activites-card img {
+    height: 140px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  /******* FIN ACTIVITES ********/
 }
+
+/********************* FIN RESPONSIVE MOBILE *******************/
