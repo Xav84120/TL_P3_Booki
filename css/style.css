@@ -189,6 +189,14 @@ header nav li:hover {
   align-items: center;
   width: 100%;
 }
+
+.filter-grp-1,
+.filter-grp-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
 .filter {
   display: flex;
   justify-content: center;
@@ -523,7 +531,12 @@ footer li {
   }
 
   .filters-grp {
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
   }
 
   .hebergements-and-populaires {
