@@ -371,6 +371,32 @@ header nav li:hover {
 
 /******** FIN Activites ************/
 
+/********* DEBUT FOOTER ************/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer,
+h3,
+li {
+  margin-bottom: 10px;
+}
+
+/********** FIN FOOTER *************/
+
 /********************************************* RESPONSIVE *************************************************/
 
 /********************* DEBUT RESPONSIVE TABLETTE *******************/
@@ -549,8 +575,21 @@ header nav li:hover {
     border-radius: 20px;
     margin-bottom: 20px;
   }
-
   /******* FIN ACTIVITES ********/
+
+  /******* DEBUT FOOTER *********/
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    margin-bottom: 50px;
+  }
+
+  /******** FIN FOOTER *********/
 }
 
 /********************* FIN RESPONSIVE MOBILE *******************/
