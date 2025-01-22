@@ -24,7 +24,6 @@ body {
   padding: 0;
   max-width: 1440px;
   min-width: 320px;
-  margin-bottom: 30px;
 }
 
 .main-container {
@@ -88,14 +87,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 header img {
   margin-top: 30px;
   height: 20px;
-}
-header nav {
-  width: 30%;
 }
 
 header nav ul {
@@ -106,7 +102,7 @@ header nav ul {
 }
 
 header nav li {
-  padding-top: 10px;
+  padding-top: 16px;
 }
 header nav li:hover {
   color: var(--main-color);
@@ -146,6 +142,7 @@ header nav li:hover {
   width: 50px;
   font-size: 20px;
   border-radius: 15px 0 0 15px;
+  color: black;
   background: var(--main-bg-color);
 }
 
@@ -159,6 +156,11 @@ header nav li:hover {
   border-bottom: 1px solid var(--main-bg-color);
   border-left: none;
   border-right: none;
+}
+
+.search-bar form input::placeholder {
+  opacity: 1;
+  color: black;
 }
 
 .search-bar form button {
@@ -195,6 +197,7 @@ header nav li:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
   gap: 15px;
 }
 .filter {
@@ -206,7 +209,8 @@ header nav li:hover {
   padding-right: 5px;
   border: 2px var(--main-bg-color) solid;
   border-radius: 25px;
-  width: 173px;
+  min-width: 173px;
+  width: 50%;
   height: 50px;
 }
 
@@ -289,7 +293,19 @@ header nav li:hover {
 }
 
 .hebergements .card {
-  height: 205px;
+  min-height: 205px;
+}
+
+.hebergements .card-content {
+  padding-left: 15px;
+}
+
+.hebergements .card-title {
+  margin: 4px 0 8px 0;
+}
+
+.hebergements .card-subtitle {
+  margin-bottom: 8px;
 }
 
 /****** FIN HEBERGEMENTS ***********/
@@ -344,7 +360,7 @@ header nav li:hover {
 
 /****** DEBUT ACTIVITES ************/
 .activites {
-  padding: 30px;
+  padding: 30px 0;
 }
 .activites h2 {
   margin-bottom: 30px;
@@ -371,8 +387,9 @@ header nav li:hover {
 .activites-card img {
   height: 380px;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   margin-bottom: 20px;
+  object-fit: cover;
 }
 
 .activites-card-text {
@@ -387,7 +404,6 @@ footer {
   justify-content: space-around;
   align-items: center;
   background-color: var(--main-bg-color);
-  border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
 }
@@ -465,7 +481,7 @@ footer li {
   }
 
   .activites-card {
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     height: 275px;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
   }
@@ -484,6 +500,9 @@ footer li {
 /********************* DEBUT RESPONSIVE MOBILE *******************/
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .main-container {
+    padding: 0;
+  }
   /********* DEBUT HEADER *******/
   header {
     display: flex;
@@ -502,7 +521,12 @@ footer li {
 
   header nav ul {
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  header nav li {
+    text-align: center;
+    width: 50%;
   }
 
   header nav li:hover {
@@ -579,8 +603,7 @@ footer li {
     align-items: flex-start;
   }
   .activites-grp-cards a {
-    width: 100%;
-    max-width: 320px;
+    max-width: 100%;
   }
 
   .activites-card {
@@ -592,7 +615,7 @@ footer li {
   .activites-card img {
     height: 140px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     margin-bottom: 20px;
   }
   /******* FIN ACTIVITES ********/
