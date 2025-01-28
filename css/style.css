@@ -197,7 +197,7 @@ header nav li:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: fit-content;
   gap: 15px;
 }
 .filter {
@@ -569,6 +569,10 @@ footer li {
     background: var(--main-color);
     border-radius: 15px;
   }
+  .filter-grp-1,
+  .filter-grp-2 {
+    width: 100%;
+  }
 
   .filters-grp {
     display: flex;
@@ -596,7 +600,7 @@ footer li {
 
   /***** DEBUT HEBERGEMENT ****/
 
-  #hebergement-mobile-color {
+  #hebergements {
     background-color: white;
   }
 
