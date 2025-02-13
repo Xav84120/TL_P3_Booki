@@ -593,6 +593,10 @@ footer li {
     width: 100%;
   }
 
+  .filter {
+    width: 50%;
+  }
+
   .filter p {
     font-size: 14px;
   }
